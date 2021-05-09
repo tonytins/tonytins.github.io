@@ -1,5 +1,5 @@
-# Under Construction
-
-[![](images/under-construction.png)](https://beta.tonybark.com)
+<p align="center">
+  <img src="images/under-construction.png">
+</p>
 
 Hello! I'm Tony Bark. Due to a hectic string of events that lead delays and errors in development of my original web app, I've created this filler site until the actual website is complete. You check out the new one at [beta.tonybark.com](https://beta.tonybark.com). Eventually, this will redirect to the beta site until migration to this domain is complete.
