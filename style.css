@@ -1,0 +1,294 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background: #fff;
+    line-height: 1.6;
+    font-size: 18px;
+    list-style: none;
+    text-align: center;
+    font-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+main {
+    margin: auto;
+    max-width: 855px;
+    color: #444;
+    /*padding: 5em 10em;*/
+}
+
+@media (max-width: 750px) AND (max-height: 600px) {
+
+    /* Experimental mobile view */
+    body {
+        -webkit-text-size-adjust: 100%;
+        /* Prevent font scaling in landscape while allowing user zoom */
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 900px) {
+    body {
+        margin: auto;
+        padding: 1em 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        margin: auto;
+        padding: 1em;
+    }
+}
+
+h1 {
+    line-height: 1.5;
+    color: #416dea;
+    margin-bottom: 0;
+}
+
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+th {
+    width: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #999;
+}
+
+img.logo {
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    width: 5.5em;
+    height: 5.5em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.icons {
+    margin: auto;
+    letter-spacing: 0.25em;
+    line-height: 2em;
+    white-space: nowrap;
+    text-align: center;
+}
+
+i.fab,
+i.fas {
+    font-size: 3em;
+    font-weight: 100;
+    transition: all 0.25s ease;
+}
+
+i.fab:hover,
+i.fas:hover {
+    opacity: 0.85;
+}
+
+.fa-discord {
+    color: #7289DA;
+}
+
+.fa-snapchat-ghost {
+    color: #fff;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.fa-snapchat-square {
+    color: #f4fc37;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.fa-twitter-square {
+    color: #55acee;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-github-square {
+    color: #171515;
+}
+
+.fa-git-square {
+    color: #f74e27;
+}
+
+.fa-steam-square {
+    color: #373536;
+}
+
+.fa-envelope-square {
+    color: #e84f4b;
+}
+
+.fa-twitch {
+    color: #6441A4;
+}
+
+.fa-youtube-square {
+    color: #fe0000;
+}
+
+.fa-lastfm-square {
+    color: #af0019;
+}
+
+.fa-google-plus-square {
+    color: #e15b4d;
+}
+
+.fa-spotify {
+    color: #1DB954;
+}
+
+.fa-rss-square {
+    color: #f28c35;
+}
+
+.fa-medium {
+    color: #292d2d;
+}
+
+
+/* Pure CSS Popup Box from https://codepen.io/imprakash/pen/GgNMXO*/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Experimental mobile css */
+#moreinfo a {
+    display: none;
+}
+
+@media (max-width: 750px) AND (max-height: 600px) {
+    #moreinfo a {
+        color: #416dea;
+        /* Makes the <a> blue until clicked. */
+        display: block;
+    }
+
+    #moreinfo p {
+        display: none;
+    }
+
+    #moreinfo:target p {
+        display: block
+            /*Default for <p>*/
+        ;
+    }
+
+    #moreinfo:target a {
+        display: none;
+    }
+}
+
+.intro {
+    line-height: 0.25;
+}
+
+.intro small {
+    color: #555;
+}
