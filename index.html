@@ -44,7 +44,7 @@
                     <h1>Arf! I'm Tony Bark.</h1>
                     <small>(they/them)</small>
                 </div>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales, odio nec scelerisque.
+                <!-- <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales, odio nec scelerisque.
                     <a href="#moreinfo" aria-label=""><i class="fas fa-arrow-alt-circle-down"
                             style="font-size: 2em;"></i></a><br />
                 </h3>
@@ -54,12 +54,14 @@
                     <br />
                     Pellentesque efficitur pretium mauris sit amet convallis. In varius diam sit amet feugiat pretium.
                     Vivamus a nulla.
-                </p>
+                </p> -->
             </div>
         </header>
         <div class="icons">
             <a aria-label="Twitter" title="Twitter" rel="noreferrer" itemprop="sameAs" target="_blank"
                 href="https://twitter.com/tonyt1ns"><i class="fab fa-twitter-square"></i></a>
+            <a aria-label="Steam" title="Steam" rel="noreferrer" itemprop="sameAs" target="_blank"
+                href="https://steamcommunity.com/id/tonytins/"><i class="fab fa-steam"></i></a>
             <wbr>
             <a aria-label="GitHub" title="GitHub" rel="noreferrer" itemprop="sameAs" target="_blank"
                 href="https://github.com/tonytins/"><i class="fab fa-github-square"></i></a>
@@ -72,14 +74,47 @@
             <wbr>
             <a aria-label="Medium" title="Medium" rel="noreferrer" itemprop="sameAs" target="_blank"
                 href="https://medium.com/@tonytins"><i class="fab fa-medium"></i></a>
+            <a aria-label="D&D Beyond" title="D&D Beyond" rel="noreferrer" itemprop="sameAs" target="_blank"
+                href="https://www.dndbeyond.com/members/Tonytins"><i class="fab fa-d-and-d"></i></a>
         </div>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css"
-            integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css"
-            integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css"
-            integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+            integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+        </script>
+
+
+        <script>
+            const ethereumButton = document.querySelector('.enableEthereumButton');
+            const sendEthButton = document.querySelector('.sendEthButton');
+
+            let accounts = [];
+
+            //Sending Ethereum to an address
+            sendEthButton.addEventListener('click', () => {
+                ethereum
+                    .request({
+                        method: 'eth_sendTransaction',
+                        params: [{
+                            from: accounts[0],
+                            to: '0x2f318C334780961FB129D2a6c30D0763d9a5C970'
+                        }, ],
+                    })
+                    .then((txHash) => console.log(txHash))
+                    .catch((error) => console.error);
+            });
+
+            ethereumButton.addEventListener('click', () => {
+                getAccount();
+            });
+
+            async function getAccount() {
+                accounts = await ethereum.request({
+                    method: 'eth_requestAccounts'
+                });
+            }
+        </script>
 
         <script defer>
             (function (h, o, t, j, a, r) {

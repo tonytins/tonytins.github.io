@@ -95,6 +95,7 @@ img.logo {
 }
 
 .icons {
+    padding: 1em;
     margin: auto;
     letter-spacing: 0.25em;
     line-height: 2em;
@@ -102,9 +103,12 @@ img.logo {
     text-align: center;
 }
 
+.svg-inline--fa {
+    font-size: 2em;
+}
+
 i.fab,
 i.fas {
-    font-size: 3em;
     font-weight: 100;
     transition: all 0.25s ease;
 }
@@ -160,6 +164,10 @@ i.fas:hover {
 
 .fa-steam-square {
     color: #373536;
+}
+
+.fa-d-and-d-beyond, .fa-d-and-d {
+    color: red;
 }
 
 .fa-envelope-square {
