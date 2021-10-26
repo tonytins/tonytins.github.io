@@ -166,6 +166,14 @@ i.fas:hover {
     color: #373536;
 }
 
+.fa-xbox {
+    color: #107C10;
+}
+
+.fa-html5 {
+    color: #e34f26;
+}
+
 .fa-d-and-d-beyond, .fa-d-and-d {
     color: red;
 }
@@ -182,11 +190,11 @@ i.fas:hover {
     color: #6441A4;
 }
 
-.fa-youtube-square {
+.fa-youtube-square, .fa-youtube {
     color: #fe0000;
 }
 
-.fa-lastfm-square {
+.fa-lastfm-square, .fa-lastfm {
     color: #af0019;
 }
 
@@ -198,7 +206,7 @@ i.fas:hover {
     color: #1DB954;
 }
 
-.fa-rss-square {
+.fa-rss-square, .fa-rss {
     color: #f28c35;
 }
 
