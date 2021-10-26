@@ -88,8 +88,8 @@ img.logo {
     object-fit: cover;
     display: block;
     margin: auto;
-    width: 5.5em;
-    height: 5.5em;
+    width: 7.5em;
+    height: 7.5em;
     overflow: hidden;
     border-radius: 50%;
 }
@@ -162,12 +162,16 @@ i.fas:hover {
     color: #f74e27;
 }
 
-.fa-steam-square {
+.fa-steam-square, .fa-steam {
     color: #373536;
 }
 
 .fa-d-and-d-beyond, .fa-d-and-d {
     color: red;
+}
+
+.fa-pinterest {
+    color: #cb2027;
 }
 
 .fa-envelope-square {
