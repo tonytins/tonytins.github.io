@@ -1,0 +1,34 @@
+@media (prefers-color-scheme: dark) {
+    /* Dark theme styles go here */
+    body {
+        background: #243447;
+    }
+
+    main {
+        color: #fff;
+    }
+
+    .intro small {
+        color: #fff;
+    }
+
+    h1 {
+        color: lightsteelblue;
+    }
+
+    a {
+        color: lightblue;
+    }
+
+    .fa-medium, .fa-steam-square, 
+    .fa-steam, .fa-github-square, 
+    .fa-github, .fa-rss-square, 
+    .fa-rss, .fa-wordpress, .fa-lastfm-square, 
+    .fa-lastfm, .fa-youtube-square, 
+    .fa-youtube, .fa-twitch, .fa-twitch-square, 
+    .fa-twitter-square, .fa-twitter, .fa-spotify,
+    .fa-pinterest-square, .fa-pinterest,
+    .fa-d-and-d-beyond, .fa-d-and-d, .fa-xbox {
+        color: #fff;
+    }
+}
