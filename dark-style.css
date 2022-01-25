@@ -14,11 +14,11 @@
     }
 
     h1 {
-        color: lightsteelblue;
+        color: #b0c4de;
     }
 
     a {
-        color: lightblue;
+        color: #add8e6;
     }
 
     .fa-medium, .fa-steam-square, 
@@ -29,7 +29,8 @@
     .fa-youtube, .fa-twitch, .fa-twitch-square, 
     .fa-twitter-square, .fa-twitter, .fa-spotify,
     .fa-pinterest-square, .fa-pinterest,
-    .fa-d-and-d-beyond, .fa-d-and-d, .fa-xbox {
+    .fa-d-and-d-beyond, .fa-d-and-d, .fa-xbox, 
+    .fa-itch-io {
         color: #fff;
     }
 }
